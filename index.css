@@ -1,0 +1,204 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+header{
+    position: sticky;
+}
+header h1{
+    text-align: center;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(11, 0, 0);
+    color: white;
+    text-align: center;
+}
+main{
+    display:flex;
+    height: 40rem;    
+}
+.formsection{
+   /* width: 40%; */
+   display: flex;
+   flex-direction: column;
+   background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+   border-radius: 16px;
+   padding: 10px;
+    
+   }
+
+    .form-fields{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        background-color: aliceblue;
+        gap:20px;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+   input[type="text"],input[type="number"],input[type="email"]{
+    /* width: 35em; */
+     height:2em;
+     font-style: italic;
+     font-family: cursive;
+     font-weight: 700;
+     padding-left: 12px;
+    outline-style: none;
+    outline: none;
+    border: none;
+    border-bottom:3px solid #008CBA;
+ }
+.displysection{
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    display: flex;
+    flex-direction: column;
+    flex-grow:3;
+    align-items: center;
+    padding: 1.2em;
+    gap:20px;
+
+}
+.displaytitle{
+width: 100%;
+flex-shrink: 2;
+background-color: aliceblue;
+text-align: center;
+}
+.displaydata{
+width: 100%;
+flex-grow: 3;
+overflow-y: scroll;
+text-align: center;
+}
+.displaydata::-webkit-scrollbar {
+    display: none;
+  }
+.dtable{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    }
+th, td {
+     padding: 16px;
+}
+th,tr {
+    background-color: #f2f2f2;
+  }
+  tr:hover{
+  background-color: rgb(193, 201, 208);
+}
+.div2{
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,22,99,0.6694327389158788) 38%, rgba(0,212,255,0.6610293775713411) 100%); */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+    flex-grow: 1;
+    flex-wrap:nowrap;
+    align-items: center;
+    text-align: center;
+}
+.form-fieldsedit{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 2em; 
+    font-weight: 700;
+}
+.form-fieldsedit .divbtn{
+    display: block;
+    /* gap: 50px; */
+}
+/* .form-fieldsedit
+ input[type="text"],input[type="number"],input[type="email"]{
+    
+} */
+button {
+    padding: 5px 10px;
+    margin: 2px;
+    font-weight: 700;
+}
+.divbtn{
+    margin-top: 3em;
+    display: flex;
+    gap: 50px;
+
+}
+.addbtn{
+    border-radius: 3em;
+    border: none;
+    background-color: DodgerBlue;   
+    height: 3em;
+    flex-grow: 1;   
+}
+.delbtn{
+    border-radius: 3em;
+    border: none;
+    background-color: #f1542d;}
+.tbledelbtn{
+    border-radius: 3em;
+    height: 3em;
+    flex-grow: 1;
+    border: none;
+    background-color: #cb544b;
+}
+.editbtn{
+    border-radius: 3em;
+    border: none;
+    background-color: #09ba00;   
+    height: 3em;
+    flex-grow: 1;   
+}
+.modifybtn{
+border:none;
+border-radius: 3em;
+background-color: #66ffcc;   
+height: 2.5em;
+flex-grow: 1;   
+}
+.resetrcd{
+    border: none;
+    border-radius: 3em;
+    background-color: #f1542d;
+    height: 2.5em;
+    flex-grow: 1;
+}
+@media only screen and (max-width: 1640px) {
+    .form-fieldsedit{
+        display: flexbox;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap:15px;
+        padding: 2em; 
+        font-weight: 700;
+    }
+    .form-fieldsedit > .divbtn{
+        flex-grow: 2;
+        position: relative;
+        height: 80px;
+        top:-30px;
+        display: flexbox;
+        gap: 5px;
+
+    }
+    .modifybtn{
+        border: none;
+        border-radius: 3em;
+        background-color: #66ffcc;   
+        height:50px;
+        }
+ 
+}
+@media only screen and (max-width: 1340px){
+    .form-fieldsedit{
+        display:block;
+        padding: 60px;
+    }
+
+}
